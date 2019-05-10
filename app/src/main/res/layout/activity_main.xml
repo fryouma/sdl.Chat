@@ -38,6 +38,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/main_progress" />
 
+    <Button
+        android:id="@+id/main_soundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="onClickSoundButton"
+        android:text="@string/main_sound_button_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_input"
+        app:layout_constraintEnd_toStartOf="@+id/main_button" />
+
     <EditText
         android:id="@+id/main_input"
         android:layout_width="0dp"
@@ -47,7 +58,7 @@
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/main_button"
+        app:layout_constraintEnd_toStartOf="@id/main_soundButton"
         app:layout_constraintTop_toBottomOf="@id/main_logview" />
 
     <Button
